@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/diarycardview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:id="@+id/diarycard2_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/diarycard2_dayofweek_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/diarycard_emotion_icon"
+                android:textAlignment="center"
+                android:fontFamily="@font/nanum_barunpen_r"
+                android:textColor="#353535"
+                android:text="Rabu"/>
+
+            <RelativeLayout
+                android:id="@+id/diarycard2_emotion_layout"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FF4746">
+                <ImageView
+                    android:id="@+id/diarycard2_emotion_icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_emotion_angry_white"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/diarycard2_datetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanum_barunpen_r"
+                android:text="2018.11.01"
+                android:textColor="#353535"
+                android:textAlignment="center"
+                android:textSize="15dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

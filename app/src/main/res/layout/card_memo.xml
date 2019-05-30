@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card="http://schemas.android.com/apk/res-auto">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="3dp"
+            app:cardUseCompatPadding="true">
+                <RelativeLayout
+                    android:id="@+id/memocard_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:id="@+id/memocard_date_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#B4D8E7">
+                                <TextView
+                                    android:layout_margin="7dp"
+                                    android:id="@+id/card_memo_date_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:fontFamily="@font/nanum_barunpen_r"
+                                    android:text="2018.10.29"
+                                    android:textColor="#474747"
+                                    android:textSize="12dp" />
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/card_memo_content_text"
+                            android:background="#FFFFFF"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/memocard_date_layout"
+                            android:fontFamily="@font/nanumpen"
+                            android:text="Isi"
+                            android:textSize="15dp"
+                            android:textColor="#000000"/>
+                </RelativeLayout>
+        </android.support.v7.widget.CardView>
+</RelativeLayout>

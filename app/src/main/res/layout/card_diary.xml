@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:id="@+id/diarycard_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/peace"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/diarycard_layout"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerVertical="true">
+                    <ImageView
+                        android:id="@+id/diarycard_emotion_icon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_emotion_peace_white"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/diarycard_emotion_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seperti itu saja"
+                    android:fontFamily="@font/nanum_barunpen_b"
+                    android:textSize="45dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_toRightOf="@id/diarycard_layout"/>
+                <RelativeLayout
+                    android:id="@+id/diarycard_centerlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@id/diarycard_emotion_text"
+                    android:layout_toRightOf="@id/diarycard_layout"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@id/diarycard_centerlayout"
+                    android:layout_toRightOf="@id/diarycard_layout">
+
+                    <TextView
+                        android:id="@+id/diarycard_datetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/nanum_barunpen_r"
+                        android:text="2018.11.05"
+                        android:textColor="#FFFFFF"/>
+
+
+
+                    <Button
+                        android:id="@+id/diarycard_viewbutton"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_memobutton"
+                        android:layout_toLeftOf="@id/diarycard_trashbutton"
+                        android:layout_marginRight="10dp"/>
+                    <Button
+                        android:id="@+id/diarycard_trashbutton"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_trashbutton"
+                        android:layout_alignParentRight="true"/>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+
+    <attr name="color_1" format="color"/>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--<item name="colorAccent">#69D2E7</item>-->
+        <!--<item name="colorPrimary">#A7DBD8</item>-->
+        <!--<item name="colorPrimaryDark">#E0E4CC</item>-->
+        <!--<item name="colorControlHighlight">#F38630</item>-->
+        <!--<item name="colorControlNormal">#FA6900</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">#726669</item>
+        <item name="colorPrimary">#C3B3BD</item>
+        <item name="colorPrimaryDark">#DEC6C5</item>
+        <item name="colorControlHighlight">#F8D9CC</item>
+        <item name="colorControlNormal">#F6E5D7</item>
+    </style>
+
+</resources>

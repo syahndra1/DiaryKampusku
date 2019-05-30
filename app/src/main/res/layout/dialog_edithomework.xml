@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00BDBDBD">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_radius_top">
+
+            <EditText
+                android:id="@+id/edit_homework_classname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tulis Mata Kuliah..."
+                android:singleLine="true"
+                android:layout_margin="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EAEAEA"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_radius_bottom">
+
+            <EditText
+                android:id="@+id/edit_homework_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="12dp"
+                android:inputType="text|textMultiLine"
+                android:minLines="16"
+                android:background="@drawable/camo_storke"
+                />
+            <Button
+                android:id="@+id/button_datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATE"
+                android:layout_margin="10dp"
+                android:background="@drawable/beige_radius_all"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/edit_homework_content"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:id="@+id/text_daypicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:text="D-Day"
+                android:layout_below="@id/edit_homework_content"
+                android:layout_alignParentRight="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/button_datepicker"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_edithomework_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_radius_leftbottom"
+                    android:text="Batalkan"/>
+                <Button
+                    android:id="@+id/button_edithomework_complete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/radius_rightbottom"
+                    android:text="Simpan"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

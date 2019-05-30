@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_radius_all">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#5F6B48"
+            android:text="MEMO"
+            android:textSize="20dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/contentmemo_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:text="2018.10.29"
+            android:layout_marginRight="20dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/contentmemo_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="10dp">
+                <TextView
+                    android:id="@+id/contentmemo_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Pesan memo"/>
+            </android.support.v4.widget.NestedScrollView>
+
+            <Button
+                android:id="@+id/memo_delete_button"
+                android:layout_below="@id/contentmemo_view"
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/deletebutton_selector"/>
+            <Button
+                android:id="@+id/memo_revise_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/contentmemo_view"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/memo_delete_button"
+                android:background="@drawable/revisebutton_selector"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/memo_delete_button"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/button_contentmemo_complete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/contentbutton_selector"
+                    android:text="Oke"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

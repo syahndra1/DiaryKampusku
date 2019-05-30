@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/navigation_item_timetable"-->
+            <!--android:icon="@drawable/ic_timetable"-->
+            <!--android:title="@string/nav_item_timetable" />-->
+        <!--<item-->
+            <!--android:id="@+id/navigation_item_images"-->
+            <!--android:icon="@drawable/ic_image"-->
+            <!--android:title="@string/nav_item_images" />-->
+        <!--<item-->
+            <!--android:id="@+id/navigation_item_location"-->
+            <!--android:icon="@drawable/ic_place"-->
+            <!--android:title="@string/nav_item_location" />-->
+    <!--</group>-->
+
+    <item android:title="Tools">
+        <menu>
+            <item
+                android:icon="@drawable/ic_calculator"
+                android:id="@+id/nav_sub_menu_item01"
+                android:title="Kalkulator" />
+            <item
+                android:icon="@drawable/ic_translation"
+                android:id="@+id/nav_sub_menu_item02"
+                android:title="Penerjemah" />
+            <item
+                android:icon="@drawable/ic_calculator"
+                android:id="@+id/nav_sub_menu_item03"
+                android:title="Kalkulator Kredit" />
+            <item
+                android:icon="@drawable/ic_water"
+                android:id="@+id/nav_sub_menu_item04"
+                android:title="Suhu Air Han" />
+            <item
+                android:icon="@drawable/ic_namubook"
+                android:id="@+id/nav_sub_menu_item05"
+                android:title="Pohon Wiki" />
+        </menu>
+    </item>
+
+</menu>
