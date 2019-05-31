@@ -74,53 +74,6 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setHomeAsUpIndicator(R.drawable.ic_drawer);
-        actionBar.setDisplayHomeAsUpEnabled(true);
-
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.navigation_view);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem menuItem) {
-                menuItem.setChecked(false);
-                mDrawerLayout.closeDrawers();
-
-                int id = menuItem.getItemId();
-                switch (id) {
-
-                    case R.id.nav_sub_menu_item01:
-                        Intent intent = new Intent(getApplicationContext(),WebViewActivity.class);
-                        intent.putExtra("link","https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=%EA%B3%84%EC%82%B0%EA%B8%B0");
-                        startActivity(intent);
-                        break;
-                    case R.id.nav_sub_menu_item02:
-                        Intent intent2 = new Intent(getApplicationContext(),WebViewActivity.class);
-                        intent2.putExtra("link","https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=%EB%B2%88%EC%97%AD%EA%B8%B0");
-                        startActivity(intent2);
-                        break;
-                    case R.id.nav_sub_menu_item03:
-                        Intent intent3 = new Intent(getApplicationContext(),WebViewActivity.class);
-                        intent3.putExtra("link","https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=%ED%95%99%EC%A0%90%EA%B3%84%EC%82%B0%EA%B8%B0");
-                        startActivity(intent3);
-                        break;
-                    case R.id.nav_sub_menu_item04:
-                        Intent intent4 = new Intent(getApplicationContext(),WebViewActivity.class);
-                        intent4.putExtra("link","https://www.wpws.kr/hangang/");
-                        startActivity(intent4);
-                        break;
-                    case R.id.nav_sub_menu_item05:
-                        Intent intent5 = new Intent(getApplicationContext(),WebViewActivity.class);
-                        intent5.putExtra("link","https://namu.wiki/w/%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4:%EB%8C%80%EB%AC%B8");
-                        startActivity(intent5);
-                        break;
-
-                }
-
-                return true;
-            }
-        });
 
     }
 
